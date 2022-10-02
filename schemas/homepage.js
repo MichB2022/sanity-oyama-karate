@@ -62,13 +62,48 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required()
     },
-    
+    {
+      name: 'kidsImage',
+      title: 'Zdjęcie grupy dzieci',
+      type: 'image',
+      options: {
+        hotspot: true
+      },
+      validation: (Rule) => Rule.required()
+    },
+    {
+      name: 'teenagersImage',
+      title: 'Zdjęcie grupy młodziezy',
+      type: 'image',
+      options: {
+        hotspot: true
+      },
+      validation: (Rule) => Rule.required()
+    },
+    {
+      name: 'adultsImage',
+      title: 'Zdjęcie grupy dorosłych',
+      type: 'image',
+      options: {
+        hotspot: true
+      },
+      validation: (Rule) => Rule.required()
+    },
+    {
+      name: 'familyImage',
+      title: 'Zdjęcie grupy rodziny',
+      type: 'image',
+      options: {
+        hotspot: true
+      },
+      validation: (Rule) => Rule.required()
+    }
   ],
   preview: {
     prepare() {
       return {
         title: 'Strona Główna'
-      }
+      };
     }
   }
 };
